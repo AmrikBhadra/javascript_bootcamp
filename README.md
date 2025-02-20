@@ -3,11 +3,6 @@
 This repository contains learning codes for all topics of JavaScript.
 
 ---
-# JavaScript Bootcamp
-
-This repository contains learning codes for all topics of JavaScript.
-
----
 
 ## JavaScript Strings
 
