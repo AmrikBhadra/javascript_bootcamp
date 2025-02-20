@@ -3,6 +3,109 @@
 This repository contains learning codes for all topics of JavaScript.
 
 ---
+# JavaScript Bootcamp
+
+This repository contains learning codes for all topics of JavaScript.
+
+---
+
+## JavaScript Strings
+
+- Strings are denoted by single or double quotes.
+- Declared using literals or `String` constructor.
+
+### 1. String Declaration
+- `const firstName = 'Amrik';`
+- `const lastName = "Bhadra";`
+- Using constructor: `const gameName = new String('GTA-V');` (creates a string object)
+
+### 2. String Concatenation
+- Using `+`: `firstName + " " + lastName`
+- Using `,` (automatically adds space): `console.log(firstName, lastName)`
+- Using template literals: ``Hello my name is ${firstName} ${lastName}``
+
+### 3. String Methods
+- `.length` — Returns the length of the string.
+- `.toUpperCase()` — Converts string to uppercase.
+- `.toLowerCase()` — Converts string to lowercase.
+- `.charAt(index)` — Returns character at the specified index.
+- `.indexOf(char)` — Returns the index of the character.
+- `.substring(start, end)` — Extracts a substring (no negative index allowed).
+- `.slice(start, end)` — Extracts a substring (supports negative indices).
+- `.trim()` — Removes whitespace from both ends.
+- `.trimStart()` — Removes whitespace from the start.
+- `.trimEnd()` — Removes whitespace from the end.
+- `.replace(old, new)` — Replaces substring.
+- `.includes(substring)` — Checks if substring is present.
+- `.split(separator)` — Splits string into an array.
+- `.valueOf()` — Returns the primitive value.
+
+---
+
+## JavaScript Numbers and Math
+
+### 1. Numbers
+- Numbers are created using literals or the `Number` constructor.
+- Methods:
+  - `toString()` — Converts the number to a string.
+  - `toFixed(n)` — Formats the number with `n` decimal places.
+  - `toPrecision(n)` — Formats the number to a specified precision.
+  - `toLocaleString()` — Formats the number according to the locale.
+
+### 2. Number Properties
+- `Number.MAX_VALUE` — Maximum representable number.
+- `Number.MIN_VALUE` — Minimum representable number.
+
+### 3. Math Library
+- Constants:
+  - `Math.PI` — Value of π.
+  - `Math.SQRT2` — Square root of 2.
+
+- Methods:
+  - `Math.abs()` — Returns the absolute value.
+  - `Math.min(a, b, ...)` — Returns the smallest number.
+  - `Math.max(a, b, ...)` — Returns the largest number.
+  - `Math.round()` — Rounds to the nearest integer.
+  - `Math.floor()` — Rounds down.
+  - `Math.ceil()` — Rounds up.
+  - `Math.sqrt()` — Returns the square root.
+  - `Math.pow(x, y)` — Returns `x` raised to the power of `y`.
+  - `Math.log2()` — Returns the base-2 logarithm.
+  - `Math.random()` — Generates a random number between 0 and 1.
+  - Random number within range: `Math.floor(Math.random() * (max - min + 1)) + min`
+
+---
+
+## JavaScript Dates
+
+- JavaScript stores dates as milliseconds since January 1, 1970 (Unix epoch).
+
+### 1. Date Properties and Methods
+- `typeof date` — Returns `'object'`.
+- Methods:
+  - `date.toDateString()` — Human-readable date.
+  - `date.toISOString()` — ISO 8601 format.
+  - `date.toLocaleString()` — Localized date and time.
+  - `date.toUTCString()` — UTC date and time.
+  - `Date.now()` — Current timestamp in milliseconds.
+
+### 2. Getting Date Components
+- `date.getDate()` — Day of the month.
+- `date.getMonth()` — Month (0-indexed).
+- `date.getFullYear()` — Year.
+- `date.getDay()` — Day of the week.
+- `date.getHours()`, `.getMinutes()`, `.getSeconds()`, `.getMilliseconds()` — Time components.
+
+### 3. Creating Dates
+- `new Date(year, month, day)` — Year, month, day.
+- `new Date(0)` — Unix epoch.
+- `new Date("yyyy-mm-dd")` — ISO format.
+
+### 4. Formatting Dates
+- `date.toLocaleString('default', { weekday: 'long' })` — Weekday name.
+- `date.toLocaleString('default', { month: 'long' })` — Month name.
+
+---
 
 ## JavaScript Array
 
