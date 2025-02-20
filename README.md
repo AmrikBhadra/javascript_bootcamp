@@ -1,42 +1,44 @@
-# javascript_bootcamp
-This Repository contains Learning codes of all topics of javascript
+# JavaScript Bootcamp
 
--------------------------------------------------------------------------------------------------------
+This repository contains learning codes for all topics of JavaScript.
 
-# Javascript Array:
+---
 
-1. Method of decalaration:
-    --> const arr[] = [1, 2, 3, 4, 5, 6]
-    --> const arr = new Array(1, 2, 3, 4, 5, 6)
+## JavaScript Array
 
-2. Type: object
+### 1. Methods of Declaration
+- `const arr = [1, 2, 3, 4, 5, 6]`
+- `const arr = new Array(1, 2, 3, 4, 5, 6)`
 
-3. Access Array elements
-    --> using indexes ( starting from 0 )
-    --> access elemnt at 3rd index: arr[3]
+### 2. Type
+- Object
 
-4. Shallow copy vs Deep copy
-    --> Shallow copy: both arrays have same reference point; changes made in one, affects in other aswell
+### 3. Access Array Elements
+- Using indexes (starting from 0)
+- Access element at 3rd index: `arr[3]`
 
-    --> Deep copy: both arrays doesnot have same refrence
+### 4. Shallow Copy vs Deep Copy
+- **Shallow Copy:** Both arrays share the same reference point; changes made in one affect the other.
+- **Deep Copy:** Both arrays have different references.
+- **Note:** When one array is copied into another, a shallow copy is created.
 
-    --> Note: when we copy one array into other, shallow copies are made
+### 5. Array Properties
+- `arr.length` — Returns the number of elements in the array.
 
-5. Array properties:
-    a. arr.length
+### 6. Array Methods
+- `arr.push(element)` — Inserts an element at the end; returns the updated array length.
+- `arr.pop()` — Removes the last element; returns the removed element.
+- `arr.unshift(element)` — Inserts an element at the beginning; returns the updated array length.
+- `arr.shift()` — Removes the first element; returns the removed element.
+- `arr.includes(element)` — Checks if the element is present; returns `true` or `false`.
+- `arr.indexOf(element)` — Returns the index of the element if present; otherwise `-1`.
+- `arr.join(separator)` — Converts array elements into a string using the specified separator.
+- `arr.slice(startIndex, endIndex)` — Returns a shallow copy of a portion of the array (excluding the end index).
+- `arr.splice(startIndex, deleteCount, ...items)` — Changes the array by removing, replacing, or adding elements.
 
-6. Array Methods:
-    a. arr.push(element): insert elemenet at end;  returns length of updated array
-    b. arr.pop(): removes element from end;  returns length of updated array
-    c. arr.unshift(element): insert elemenet at beginning;  returns length of updated arr
-    d. arr.shift(): removes elemenet from beginning;  returns length of updated arr
-    e. arr.includes(element): check if element present or not; true/false
-    f. arr.indexOf(element): if element present, returns its index; otherwise -1
-    g. arr.join(separator): converts array elements to string using separator
-    h. arr.slice(startInex, endIndex): 
-    i: arr.splice(startIndex, endIndex): 
+### 7. Slice vs Splice
+| **Slice**                                      | **Splice**                                        |
+|----------------------------------------------|------------------------------------------------|
+| 1. Excludes the end index                    | 1. Includes the end index                       |
+| 2. Does not affect the original array        | 2. Removes or modifies elements in the original array |
 
-7. Slice vs Splice:
-    Slice:                                        Splice:
-    1. Excludes end index                         1. Includes the end index
-    2. doesnot affect original array              2. Remove the spliced elements from original array
