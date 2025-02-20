@@ -35,8 +35,19 @@ This repository contains learning codes for all topics of JavaScript.
 - `arr.join(separator)` — Converts array elements into a string using the specified separator.
 - `arr.slice(startIndex, endIndex)` — Returns a shallow copy of a portion of the array (excluding the end index).
 - `arr.splice(startIndex, deleteCount, ...items)` — Changes the array by removing, replacing, or adding elements.
+- `arr.concat(array)` — Merges two or more arrays and returns a new array.
+- Spread operator: `[...array1, ...array2]` — An alternative to `concat` for merging arrays.
+- `arr.flat(depth)` — Flattens nested arrays into a single array up to the specified depth (use `Infinity` if depth is unknown).
+- `Array.isArray(value)` — Checks if the given value is an array.
+- `Array.from(value)` — Converts an iterable or array-like object into an array.
+- `Array.of(element1, element2, ...)` — Creates a new array from a variable number of elements.
 
-### 7. Slice vs Splice
+### 7. Additional Concepts
+- Using `push()` with arrays inserts the entire array as a single element instead of appending individual elements.
+- `concat()` and the spread operator can merge more than two arrays.
+- `Array.from()` creates arrays from strings or array-like objects.
+
+### 8. Slice vs Splice
 | **Slice**                                      | **Splice**                                        |
 |----------------------------------------------|------------------------------------------------|
 | 1. Excludes the end index                    | 1. Includes the end index                       |
